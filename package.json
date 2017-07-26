@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "express": "^4.15.3"
+  },
+  "name": "UserDirectory",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:rossjcoop/dailyproject7-25-17.git",
+  "author": "Ross the great",
+  "license": "MIT"
+}
