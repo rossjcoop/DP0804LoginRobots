@@ -1,11 +1,15 @@
 {
   "dependencies": {
-    "express": "^4.15.3"
+    "express": "^4.15.3",
+    "mustache": "^2.3.0"
   },
   "name": "UserDirectory",
   "version": "1.0.0",
   "main": "index.js",
   "repository": "git@github.com:rossjcoop/dailyproject7-25-17.git",
-  "author": "Ross the great",
-  "license": "MIT"
+  "author": "Ross Cooper",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
 }
