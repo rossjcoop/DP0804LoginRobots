@@ -3,17 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <title>Document</title>
-  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="/main.css" />
 </head>
 <body>
-  <h1>User Directory</h1>
+  <h1>User Directory</h1> 
   <div class = "container">
-  	<div>
+  {{#users}}
+  	<a href = "/user/{{username}}">
+  	<div class = "usercontainer">
+  	
   		<img src = "{{avatar}}"/>
-  		<h2>{{name}}<h2>
-  		<p>[{{job}}]<p>
+  		</br>
+  		<span class "name">{{name}}</span>
+  		</br>
+  		<span class "position">{{job}}</span>
   	</div>
+  	</a>
+  {{/users}}
   </div>
+  
 </body>
 </html>
 

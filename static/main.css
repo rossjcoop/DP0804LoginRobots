@@ -8,4 +8,27 @@ body {
 
 h1 {
   color:blue;
+  text-align: center;
+}
+
+li {
+	list-style: none;
+	text-align: center;
+}
+
+
+.container {
+	width: 1000px;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 auto;
+	justify-content: center;
+}
+
+.usercontainer {
+	width: 200px;
+	height: 200px;
+	border: 1px solid gray;
+	margin: 10px;
+	text-align: center;
 }
