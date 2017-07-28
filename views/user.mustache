@@ -8,12 +8,16 @@
 <body>
   <h1>User Directory</h1>
   <div class = "container">
-  	<div>
+  	<ul>
+  		<a href = "/user.{{username}}">
+      <li>
   		<img src = "{{avatar}}"/>
-  		<h2>{{name}}<h2>
-  		<p>[{{job}}]<p>
+  		<span class "name">{{name}}</span>
+  		<span class "position">[{{job}}]</span>
+      </li>
+  		</a>
+    <ul>
   	</div>
   </div>
 </body>
 </html>
-
