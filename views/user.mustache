@@ -3,14 +3,48 @@
 <head>
   <meta charset="UTF-8">
   <title>Document</title>
-  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="/main.css" />
 </head>
 <body>
-  <h1>{{username}}</h1>
-  <img src = "{{avatar}}"/>
-  <span class "city">{{city}}</span>
-  <span class "name">{{name}}</span>
-  <span class "position">{{job}}</span>
-  </div>
+    <div class = "container">
+      <div class = "userProfile">
+      <img class = "profilePic" src = "{{avatar}}"/>  
+        <div class = "userProfileInfo"> 
+        <h1 class = "userName">{{name}}</h1>    
+        <p class = "userInfo">
+          {{#address.city}}
+          {{address.city}}, {{address.country}} |
+          {{/address.city}}
+          {{^address.city}}
+          {{address.country}} |
+          {{/address.city}}
+          {{#job}}
+          {{job}}
+          {{/job}}
+          {{^job}}
+          <span style = "color: red">Available for Hire</span>
+          {{/job}}
+          </br>
+          {{email}} |
+          {{phone}} 
+          <ul style = "list-style: none">
+            {{#university}}
+            <li><span style = "font-weight: bold">Education </span>
+            </br>
+            {{university}}</li>
+            <li><span style = "font-weight: bold">Skills </span>
+            </br>
+            {{skills}}
+            </li>
+            {{/university}}
+            {{^university}}
+            <li><span style = "font-weight: bold">Skills </span>
+            </br>
+            {{skills}}
+            </li>
+            {{/university}}        
+        </div>
+      </div>
+    </div>
 </body>
 </html>

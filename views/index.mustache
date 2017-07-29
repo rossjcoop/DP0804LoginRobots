@@ -14,9 +14,14 @@
   	
   		<img src = "{{avatar}}"/>
   		</br>
-  		<span class "name">{{name}}</span>
+  		<span class = "name">{{name}}</span>
   		</br>
-  		<span class "position">{{job}}</span>
+  		{{#job}}
+  		<span class = "position">{{job}}</span>
+  		{{/job}}
+  		{{^job}}
+  		<span class = "noposition">Available for Hire</span>
+  		{{/job}}
   	</div>
   	</a>
   {{/users}}

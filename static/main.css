@@ -6,15 +6,45 @@ body {
   padding:0;
 }
 
+.name {
+	color: blue;
+	text-decoration: none;
+	text-transform: none;
+	font-size: 18px;
+	font-family: Helvetica, Arial, Sans-Serif;
+
+}
+
+.position {
+	color: black;
+	text-decoration: none;
+	font-size: 14px;
+	font-family: Helvetica, Arial, Sans-Serif;
+}
+
+.noposition {
+	color: red;
+	text-decoration: none;
+	font-size: 14px;
+	font-family: Helvetica, Arial, Sans-Serif;
+}
+
+a {
+	text-decoration: none;
+}
+
 h1 {
   color:blue;
   text-align: center;
+  font-size: 63px;
+  font-family: Helvetica, Arial, Sans-Serif;
+}
 }
 
-li {
+p > ul > li {
 	list-style: none;
-	text-align: center;
 }
+
 
 
 .container {
@@ -32,3 +62,25 @@ li {
 	margin: 10px;
 	text-align: center;
 }
+
+
+.userProfile {
+	width: 800px;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 10px;
+	font-family: Helvetica, Arial, Sans-Serif;
+	font-size: 18px;
+}
+
+.userProileInfo {
+	width : 250px;
+
+	list-style: none;
+	padding : 15px;
+}
+
+.profilePic {
+	margin: 30px;
+}
+
