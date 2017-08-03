@@ -7,6 +7,7 @@
 </head>
 <body>
     <div class = "container">
+      {{#user}}
       <div class = "userProfile">
       <img class = "profilePic" src = "{{avatar}}"/>  
         <div class = "userProfileInfo"> 
@@ -45,6 +46,7 @@
             {{/university}}        
         </div>
       </div>
+      {{/user}}
     </div>
 </body>
 </html>
