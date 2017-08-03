@@ -27,8 +27,14 @@ function getAllUsers(cb){
 	})
 }
 
+function getUnemployedUsers(cb){
+	let query = {job: null}
+	conn.collection('users').find(query).toArray(function(err, documents){
+		cb(documents)
+	})
+}
+//////////////////////////userName came along from the controller
 function getUserByUsername(userName, cb){
-	////Can't do a query on something that I don't know, how can I bring the req.params over here??? Req is not defined.
 	let query = {username: userName}
 	conn.collection('users').findOne(query, function(err, obj){
 		cb(obj)
@@ -49,5 +55,7 @@ function getUserByUsername(userName, cb){
 
 module.exports = {
 	getAllUsers: getAllUsers,
+	getUnemployedUsers: getUnemployedUsers,
 	getUserByUsername: getUserByUsername
+
 }

@@ -6,15 +6,14 @@
   <link rel="stylesheet" href="/main.css" />
 </head>
 <body>
-  <h1>Bot Directory</h1> 
-  <a href = "/unemployed">
-  <button type = "submit" class = "buttonLink">Unemployed Bots:(</button>
+  <h1>Unemployed Bots:(</h1> 
+  <a href = "/">
+  <button type = "submit" class = "buttonLink">Return to Main Directory</button>
   </a>
   <div class = "container">
   {{#users}}
   	<a href = "/user/{{username}}">
-  	<div class = "usercontainer">
-  	
+  	<div class = "usercontainer"> 	
   		<img src = "{{avatar}}"/>
   		</br>
   		<span class = "name">{{name}}</span>
@@ -29,7 +28,5 @@
   	</a>
   {{/users}}
   </div>
-  
 </body>
 </html>
-
