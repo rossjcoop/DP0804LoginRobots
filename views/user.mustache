@@ -6,9 +6,14 @@
   <link rel="stylesheet" href="/main.css" />
 </head>
 <body>
-    <a href = "/">
-    <button type = "submit" class = "buttonLink">Return to User Directory</button>
-    </a>
+   <header>
+    <nav>
+      <a href = "/unemployed">Unemployed Bots:(</a>
+      <a href = "/registration">Create Your Bot Profile!</a>
+      <a href = "/login">Login to Your Account</a>
+      <a href = "/">Return to Directory</a>
+    </nav>
+  </header>
     <div class = "container">
       {{#user}}
       <div class = "userProfile">
@@ -46,10 +51,12 @@
             </br>
             {{skills}}
             </li>
-            {{/university}}        
+            {{/university}}
+            </br>  
+            <a href = "/edit/{{username}}"><button>Edit Profile</button>      
         </div>
       </div>
       {{/user}}
-    </div>
+    </div>s
 </body>
 </html>

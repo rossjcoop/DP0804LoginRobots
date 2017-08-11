@@ -6,16 +6,20 @@
   <link rel="stylesheet" href="/main.css" />
 </head>
 <body>
-  <h1>Bot Directory</h1> 
-  <a href = "/unemployed">
-  <button type = "submit" class = "buttonLink">Unemployed Bots:(</button>
-  </a>
+  <header>
+    <h1>Bot Directory</h1> 
+    <nav>
+      <a href = "/unemployed">Unemployed Bots:(</a>
+      <a href = "/registration">Create Your Bot Profile!</a>
+      <a href = "/login">Login to Your Account</a>
+      <a href = "/">Return to Directory</a>
+    </nav>
+  </header>
   <div class = "container">
   {{#users}}
   	<a href = "/user/{{username}}">
   	<div class = "usercontainer">
-  	
-  		<img src = "{{avatar}}"/>
+  	  <img src = "{{avatar}}"/>
   		</br>
   		<span class = "name">{{name}}</span>
   		</br>
@@ -29,6 +33,18 @@
   	</a>
   {{/users}}
   </div>
+   {{#user}}
+        <h3>
+          You are logged in as {{ username }}.
+          <small><a href="/logout/">Logout</a></small>
+        </h3>
+      {{/user}}
+      {{^user}}
+      <h3>
+        You are not logged in.
+        <small><a href="/login/">Login</a> | <a href="/registration/">Register</a></small>
+      </h3>
+      {{/user}}
   
 </body>
 </html>

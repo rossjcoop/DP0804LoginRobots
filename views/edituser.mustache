@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="/main.css" />
+</head>
+<body>
+  <header>
+    <h1>Edit Your Bot Info</h1> 
+    <nav>
+      <a href = "/unemployed">Unemployed Bots:(</a>
+      <a href = "/registration">Create Your Bot Profile!</a>
+      <a href = "/login">Login to Your Account</a>
+      <a href = "/">Return to Directory</a>
+    </nav>
+  </header>
+	<div class = "container">
+  	<form action = "/submit/{{username}}" method = "post">
+  		<label>Create a Username:</label>
+      </br>
+      </br>
+  		<input type = "text" name = "username" value = "{{username}}"/>
+      </br>
+      </br>
+  		<label>Create a Password:</label>
+      </br>
+      </br>
+  		<input type = "text" name = "password" value = "{{password}}"/>
+      </br>
+      </br>
+      <label>Add a Avatar (URL):</label>
+      </br>
+      </br>
+      <input type = "text" name = "avatar" value = "{{avatar}}"/>
+      </br>
+      </br>
+      <label>Your Name:</label>
+      </br>
+      </br>
+      <input type = "text" name = "name" value = "{{name}}"/>
+      </br>
+      </br>
+      <label>Email:</label>
+      </br>
+      </br>
+      <input type = "text" name = "email" value = "{{email}}"/>
+      </br>
+      </br>
+      <label>Education:</label>
+      </br>
+      </br>
+      <input type = "text" name = "university" value = "{{university}}"/>
+      </br>
+      </br>
+      <label>Job Title:</label>
+      </br>
+      </br>
+      <input type = "text" name = "job" value = "{{job}}"/>
+      </br>
+      </br>
+      <label>Current Employer:</label>
+      </br>
+      </br>
+      <input type = "text" name = "company" value = "{{company}}"/>
+      </br>
+      </br>
+      <label>Skills:</label>
+      </br>
+      </br>
+      <input type = "text" name = "skills" value = "{{skills"/>
+      </br>
+      </br>
+      <label>Phone Number:</label>
+      </br>
+      </br>
+      <input type = "text" name = "phone" value = "{{phone}}"/>
+      </br>
+      </br>
+      <label>Address:</label>
+      </br>
+      </br>
+      <label>Street Number:</label>
+      </br>
+      </br>
+      <input type = "text" name = "street_num" value = "{{address.street_num}}"/>
+      </br>
+      </br>
+      <label>Street Name:</label>
+      </br>
+      </br>
+      <input type = "text" name = "street_name" value = "{{address.street_name}}"/>
+      </br>
+      </br>
+      <label>City:</label>
+      </br>
+      </br>
+      <input type = "text" name = "city" value = "{{address.city}}"/>
+      </br>
+      </br>
+      <label>State or Province:</label>
+      </br>
+      </br>
+      <input type = "text" name = "state_or_province" value = "{{address.state_or_province}}"/>
+      </br>
+      </br>
+      <label>Postal Code:</label>
+      </br>
+      </br>
+      <input type = "text" name = "postal_code" value = "{{address.postal_code}}"/>
+      </br>
+      </br>
+      <label>Country:</label>
+      </br>
+      </br>
+      <input type = "text" name = "country" value = "{{address.country}}"/>
+      </br>
+      </br>
+  		<button type = "submit">Update Profile</button>
+      </br>
+      </br>
+      <a href = "/">Return to Directory</a>
+  	</form>
+  	</div>
+</body>
+</html>

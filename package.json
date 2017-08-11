@@ -1,16 +1,23 @@
 {
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "bluebird": "^3.5.0",
-    "express": "^4.15.3",
-    "mongodb": "^2.2.30",
+    "body-parser": "^1.17.2",
+    "express": "^4.15.4",
+    "express-flash-messages": "^0.1.1",
+    "express-sessions": "^1.0.6",
+    "express-validator": "^3.2.1",
+    "mongodb": "^2.2.31",
     "mongoose": "4.10.8",
     "mustache": "^2.3.0",
-    "mustache-express": "^1.2.5"
+    "mustache-express": "^1.2.5",
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0"
   },
-  "name": "UserDirectory",
+  "name": "LoginRobots",
   "version": "1.0.0",
   "main": "app.js",
-  "repository": "git@github.com:rossjcoop/dailyproject7-25-17.git",
+  "repository": "git@github.com:rossjcoop/DP0804LoginRobots.git",
   "author": "Ross Cooper",
   "license": "MIT",
   "scripts": {

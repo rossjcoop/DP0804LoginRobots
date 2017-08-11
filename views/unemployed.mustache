@@ -6,10 +6,15 @@
   <link rel="stylesheet" href="/main.css" />
 </head>
 <body>
-  <h1>Unemployed Bots:(</h1> 
-  <a href = "/">
-  <button type = "submit" class = "buttonLink">Return to Main Directory</button>
-  </a>
+  <header>
+    <h1>Unemployed Bots:(</h1> 
+    <nav>
+      <a href = "/unemployed">Unemployed Bots:(</a>
+      <a href = "/registration">Create Your Bot Profile!</a>
+      <a href = "/login">Login to Your Account</a>
+      <a href = "/">Return to Directory</a>
+    </nav>
+  </header>
   <div class = "container">
   {{#users}}
   	<a href = "/user/{{username}}">
@@ -27,6 +32,6 @@
   	</div>
   	</a>
   {{/users}}
-  </div>
+  </div>s
 </body>
 </html>
